@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const { Schema } = mongoose;
 const { MongoMemoryServer } = require('mongodb-memory-server');
 
-const mongod = new MongoMemoryServer();
+const mongod = new MongoMemoryServer()
 
 const getURL = () => {
   return process.env.MONGO_DB
